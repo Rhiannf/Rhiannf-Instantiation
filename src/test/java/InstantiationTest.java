@@ -18,7 +18,7 @@ public class InstantiationTest {
     @Test
     public void testObjectNotNull(){
         if(i.instantiateANewObject() == null){
-         Assert.fail();
+         Assert.fail(null);
         }
     }
 
