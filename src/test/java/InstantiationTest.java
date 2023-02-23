@@ -13,11 +13,16 @@ public class InstantiationTest {
      * (it's actually possible to pass this challenge without using the new keyword by using Strings or an object
      * received from a static method, or by returning a primitive (autoboxing), which will all be explained later.
      * For now, let's just focus on the 'new' keyword.)
+     * @param string 
      */
     @Test
     public void testObjectNotNull(){
         if(i.instantiateANewObject() == null){
-            Assert.fail("object has not been instantiated");
+         Assert.fail();
         }
+    }
+
+    private void extracted() {
+        Assert.fail(null);
     }
 }
